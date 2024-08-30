@@ -1,0 +1,967 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "quicksand", sans-serif;
+}
+
+/*  ============= header ============= */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.495);
+  z-index: 100;
+}
+header .wrap {
+  padding: 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+  z-index: 1000;
+}
+
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu.active .bar:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+}
+
+header a img {
+  width: 90%;
+}
+
+header ul {
+  display: flex;
+  font-family: "Karla", sans-serif;
+}
+header ul li {
+  display: block;
+}
+
+.active {
+  color: #ffe3a1;
+  transition: all 0.8s ease;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.388);
+  font-size: 100%;
+  padding: 0 40px;
+  text-transform: uppercase;
+}
+
+/* ============= Banner ============= */
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/village-drone.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.banner-content {
+  padding: 0 10%;
+}
+.title {
+  color: white;
+  font-family: "quicksand", sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+}
+
+.take {
+  color: white;
+  font-family: "quicksand", sans-serif;
+  font-size: 30px;
+  margin: 5%;
+}
+
+.horizontal {
+  width: 70%;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  margin: 5% auto;
+}
+
+.if {
+  color: white;
+  font-family: "quicksand", sans-serif;
+  font-size: 20px;
+  margin: 5%;
+  letter-spacing: 5px;
+  margin-bottom: 10%;
+}
+
+.book {
+  width: 9%;
+  color: white;
+  text-decoration: none;
+  background-color: #a4905d;
+  padding: 13px;
+  border: 3px solid #a49161;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+
+.book:hover {
+  background-color: #937935;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.523);
+  transition: all 0.5s ease;
+}
+
+/* ============= discover ============= */
+.discover {
+  width: 100%;
+  height: 60vh;
+  background-color: white;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.werap {
+  display: flex;
+  width: 90%;
+  height: 75%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 5%;
+}
+
+.side {
+  width: 100%;
+  padding: 0.5%;
+}
+
+.story {
+  font-size: 35px;
+  width: 80%;
+  color: black;
+  margin: 5%;
+}
+
+.lorem {
+  width: 50%;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.443);
+  margin-left: 5%;
+  line-height: 1.5;
+}
+
+.side2 {
+  width: 40%;
+  right: 5%;
+  position: absolute;
+}
+
+.side2 img {
+  width: 60%;
+  margin-left: 35%;
+  background-color: #d0d0d05f;
+  border-radius: 10px;
+  padding: 5%;
+  transition: all 0.5s ease;
+}
+
+.side2 img:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.146);
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform: translate(0, -10px);
+}
+
+/* ============= Our Room ============= */
+.our-room {
+  height: 100vh;
+  background: #d0d0d0;
+}
+
+.title-section {
+  text-align: center;
+  padding-top: 7%;
+  font-size: 50px;
+  padding-bottom: 1%;
+}
+
+.card-wrapper {
+  display: flex;
+  margin: 0 7%;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 30%;
+  padding: 1% 2% 0;
+  padding-bottom: 5%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.card:hover {
+  background: #bbbbbb;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.146);
+  transform: translate(0, -10px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h5 {
+  text-align: center;
+}
+
+.card h5 a {
+  color: #b49f6b;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.card p {
+  font-size: 15px;
+  padding-top: 20px;
+  text-align: center;
+}
+.porem {
+  width: 85%;
+  background: #bbbbbb;
+  align-items: center;
+  justify-content: center;
+  margin: 1% auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.146);
+  display: flex;
+  padding: 1%;
+  border-radius: 10px;
+}
+
+.porem form {
+  width: 100%;
+  display: flex;
+  gap: 5%;
+}
+
+.input-grup {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  font-size: 12px;
+  margin-bottom: 0.8%;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background: #d9d9d9;
+}
+
+input:focus {
+  outline: none;
+}
+
+button.booknow {
+  width: 10%;
+  height: 50%;
+  background: #a4905d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 1%;
+  margin-top: 1.4%;
+  padding: 1%;
+  transition: all 0.5s ease;
+}
+
+button.booknow:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.146);
+  transform: translate(1%);
+  background: #b49f6b;
+  transition: all 0.5s ease;
+}
+
+/* ============= Restaurant ============= */
+
+.restaurant {
+  width: 100%;
+  height: 100vh;
+  background: url(assets/restaurant.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.teks {
+  background-color: rgba(0, 0, 0, 0.265);
+  width: 90%;
+  height: 75%;
+  margin: 7% auto;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.enjoy {
+  color: white;
+  margin-top: 2%;
+  font-family: "quicksand", sans-serif;
+  font-size: 70px;
+  width: 50%;
+  letter-spacing: 3px;
+}
+
+.with {
+  color: white;
+  width: 50%;
+  font-size: 25px;
+  margin-top: 5%;
+  text-align: left;
+  margin-bottom: 4%;
+}
+
+a.menu {
+  color: #fff;
+  text-decoration: none;
+  background-color: #a4905d;
+  padding: 1%;
+  margin-left: 50%;
+  border-radius: 5px;
+}
+
+/* ============ Contact ============= */
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  background: url(assets/drone.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.contact .wrap {
+  display: flex;
+  margin: 7% auto;
+  width: 80%;
+  height: 75%;
+  padding: 1%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+.cebrek {
+  margin-left: 2%;
+  width: 50%;
+}
+
+h1.village {
+  color: #ffe3a1;
+  font-size: 60px;
+  margin-top: 3%;
+}
+
+p.entire {
+  color: white;
+  font-size: 20px;
+  margin-top: 10%;
+  width: 70%;
+}
+
+table {
+  margin: 10% 0;
+  width: 80%;
+}
+
+table tr td {
+  color: white;
+}
+
+table tr td img {
+  padding: 20px;
+  width: 30px;
+}
+
+.maps {
+  width: 40%;
+}
+
+.maps {
+  width: 40%;
+  background-color: #ffffff84;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 5% auto;
+}
+
+.maps iframe {
+  width: 80%;
+  height: 80%;
+  margin: 5% 10%;
+  border-radius: 5px;
+  height: 400px;
+  transition: all 0.5s ease;
+}
+
+.maps iframe:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.146);
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+
+/* Animasi untuk fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-in-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in.show {
+  opacity: 1;
+}
+
+.pop {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  header a img {
+    width: 80%;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.58);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 5%;
+    gap: 1rem;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    padding: 1%;
+    text-align: center;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+  .banner {
+    display: flex;
+  }
+  .banner .title {
+    font-size: 40px;
+  }
+
+  .banner .take {
+    font-size: 15px;
+  }
+  .banner .horizontal {
+    width: 90%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin: 5% auto;
+  }
+
+  .banner .if {
+    font-size: 10px;
+  }
+
+  .discover {
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .werap {
+    display: inline-block;
+  }
+
+  .side .story {
+    font-size: 50px;
+  }
+
+  .side .lorem {
+    font-size: 18px;
+  }
+
+  .side2 {
+    display: none;
+    width: 100%;
+    margin: auto;
+    position: static;
+  }
+
+  .side2 img {
+    width: 70%;
+    margin: 15% 15%;
+  }
+
+  .our-room {
+    height: 100%;
+    padding-bottom: 20%;
+  }
+
+  .title-section {
+    text-align: center;
+    padding-top: 20%;
+    font-size: 40px;
+    padding-bottom: 1%;
+  }
+
+  .card-wrapper {
+    display: inline-block;
+    padding: auto;
+    margin: auto;
+    align-items: center;
+    gap: 10rem;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+  }
+
+  .card {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10%;
+  }
+
+  .porem {
+    width: 85%;
+    height: 300px;
+    background: #bbbbbb;
+    align-items: center;
+    justify-content: center;
+    margin: 1% auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.146);
+    border-radius: 10px;
+  }
+
+  .porem form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .input-grup {
+    width: 80%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  button.booknow {
+    width: 30%;
+    font-size: 10px;
+    padding: 2%;
+  }
+
+  .restaurant {
+    display: flex;
+  }
+
+  .teks {
+    background-color: rgba(0, 0, 0, 0.265);
+    width: 80%;
+    height: 70%;
+    margin: 22% auto;
+    border-radius: 10px;
+    padding: 5%;
+  }
+
+  .enjoy {
+    color: white;
+    margin-top: 10%;
+    font-family: "quicksand", sans-serif;
+    font-size: 30px;
+    width: 100%;
+    letter-spacing: 3px;
+    margin-bottom: 20%;
+  }
+
+  .with {
+    color: white;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 5%;
+    text-align: left;
+    margin-bottom: 4%;
+  }
+  .our {
+    margin-bottom: 50%;
+  }
+
+  a.menu {
+    color: #fff;
+    text-decoration: none;
+    background-color: #a4905d;
+    padding: 5%;
+    margin-top: 10%;
+    font-size: 15px;
+    margin-left: 50%;
+    border-radius: 5px;
+  }
+
+  .contact {
+    width: 100%;
+    height: auto;
+    background: url(assets/drone.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+  }
+
+  .contact .wrap {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.265);
+    width: 90%;
+    height: 70%;
+    margin: 18% auto 0 auto;
+    border-radius: 10px;
+    padding: 5%;
+  }
+
+  .cebrek {
+    margin-left: 2%;
+    width: 100%;
+  }
+
+  h1.village {
+    color: #ffe3a1;
+    font-size: 40px;
+    margin-top: 3%;
+  }
+
+  p.entire {
+    width: 90%;
+    color: white;
+    font-size: 20px;
+    margin-top: 10%;
+  }
+
+  table {
+    margin: 10% 0;
+    width: 50%;
+  }
+
+  table tr td {
+    font-size: 15px;
+    color: white;
+  }
+
+  table tr td img {
+    padding: 20px;
+    width: 20px;
+  }
+
+  .maps {
+    width: 40%;
+  }
+
+  .maps {
+    width: 100%;
+    background-color: #ffffff84;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    /* margin: 5% auto; */
+  }
+
+  .maps iframe {
+    width: 80%;
+    height: 100%;
+    margin: 5% 10%;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+  }
+
+  .maps iframe:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.146);
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+  /* Style untuk tablet */
+  header a img {
+    width: 90%;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.58);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 5%;
+    gap: 1rem;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    padding: 1%;
+    text-align: center;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .banner {
+    width: 100vw;
+  }
+
+  .discover {
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .werap {
+    display: inline-block;
+  }
+
+  .side .story {
+    font-size: 50px;
+  }
+
+  .side .lorem {
+    font-size: 18px;
+  }
+
+  .side2 {
+    display: none;
+    width: 100%;
+    margin: auto;
+    position: static;
+  }
+
+  .side2 img {
+    width: 70%;
+    margin: 15% 15%;
+  }
+
+  .our-room {
+    width: 100vw;
+  }
+  .our-room {
+    height: 100%;
+    padding-bottom: 20%;
+  }
+
+  .title-section {
+    text-align: center;
+    padding-top: 15%;
+    font-size: 40px;
+    padding-bottom: 1%;
+  }
+
+  .porem {
+    width: 85%;
+    height: 300px;
+    background: #bbbbbb;
+    align-items: center;
+    justify-content: center;
+    margin: 1% auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.146);
+    border-radius: 10px;
+  }
+
+  .porem form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .input-grup {
+    width: 80%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  button.booknow {
+    width: 30%;
+    font-size: 10px;
+    padding: 2%;
+  }
+
+  a.menu {
+    color: #fff;
+    text-decoration: none;
+    background-color: #a4905d;
+    padding: 2%;
+    margin-top: 10%;
+    font-size: 15px;
+    margin-left: 50%;
+    border-radius: 5px;
+  }
+
+  .contact {
+    width: 100%;
+    height: auto;
+    background: url(assets/drone.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+  }
+
+  .contact .wrap {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.265);
+    width: 90%;
+    height: 70%;
+    margin: 18% auto 0 auto;
+    border-radius: 10px;
+    padding: 5%;
+  }
+
+  .cebrek {
+    margin-left: 2%;
+    width: 100%;
+  }
+
+  h1.village {
+    color: #ffe3a1;
+    font-size: 40px;
+    margin-top: 3%;
+  }
+
+  p.entire {
+    width: 90%;
+    color: white;
+    font-size: 20px;
+    margin-top: 10%;
+  }
+
+  table {
+    margin: 10% 0;
+    width: 50%;
+  }
+
+  table tr td {
+    font-size: 15px;
+    color: white;
+  }
+
+  table tr td img {
+    padding: 20px;
+    width: 20px;
+  }
+
+  .maps {
+    width: 40%;
+  }
+
+  .maps {
+    width: 100%;
+    background-color: #ffffff84;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  .maps iframe {
+    width: 80%;
+    height: 300px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    transition: all 0.5s ease;
+  }
+
+  .maps iframe:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.146);
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+  }
+}

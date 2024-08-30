@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Village</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="wrap">
+        <a href="#">
+          <img src="./assets/village-bali-website-white-logo.png" alt="logo" />
+        </a>
+        <nav>
+          <div class="hamburger-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+          <ul>
+            <li><a href="#banner" class="active">Home</a></li>
+            <li><a href="#our-room">Our Room</a></li>
+            <li><a href="#restaurant">Restaurant</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Banner -->
+      <section class="banner" id="banner">
+        <div class="banner-content">
+          <h1 class="title fade-in">Book here</h1>
+          <p class="take fade-in">Take Advance of the Lowest Available Prices</p>
+          <div class="horizontal"></div>
+          <p class="if fade-in">
+            <i>if you happen to find a better online daily rate, we will match
+              your price.</i>
+          </p>
+          <a href="#" class="book">BOOK NOW</a>
+        </div>
+      </section>
+      <!-- Discover -->
+      <section class="discover">
+        <div class="werap">
+          <div class="side fade-in">
+            <h1 class="story">Discover Our Story</h1>
+            <p class="lorem">Located in Uluwatu, 200 m from Impossible Beach, Village Bali provides accommodation with an outdoor swimming pool, free private parking, a bar and a garden.</p>
+          </div>
+          <div class="side2">
+             <img src="assets/saung.png" alt="saung">
+        </div>
+      </section>
+      <!-- Our Room -->
+      <section class="our-room" id="our-room">
+        <h1 class="title-section">Our Room</h1>
+        <div class="card-wrapper fade-in">
+          <div class="card">
+            <img src="./assets/room.jpg" alt="" />
+            <h5><a href="">Deluxe Queen room</a></h5>
+            <p>
+              This double room has a minibar, lounge chair, private garden and
+              air conditioning.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/superior.jpg" alt="" />
+            <h5><a href="">Superior King private</a></h5>
+            <p>
+              This twin/double room features air conditioning, private entrance and minibar.
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="./assets/kingdeluxe.jpg" alt="" />
+            <h5 ><a href="">King Deluxe or Twin Roomb</a></h5>
+            <p>
+              This double room has a minibar, lounge chair, private garden and
+              air conditioning.
+            </p>
+          </div>
+        </div>
+        <div class="porem">
+          <form action="#">
+            <div class="input-grup">
+              <label for="checkout" class="label-checkout">CHECK OUT :</label>
+              <input
+                type="date"
+                name="checkout"
+                id="checkout"
+                class="input-checkout"
+              />
+            </div>
+            <div class="input-grup">
+              <label for="checkin" class="label-checkin">CHECK IN :</label>
+              <input
+                type="date"
+                name="checkin"
+                id="checkin"
+                class="input-checkin"
+              />
+            </div>
+            <div class="input-grup">
+              <label for="promo">PROMO CODE :</label>
+              <input type="text" name="promo" id="promo" class="input-promo" />
+            </div>
+            <button type="submit" class="booknow">BOOK NOW</button>
+          </form>
+        </div>
+      </section>
+      <!-- Restaurant -->
+      <section class="restaurant" id="restaurant">
+        <div class="teks fade-in">
+          <h1 class="enjoy">ENJOY EVERY MOMENT</h1>
+          <p class="with">
+            With an emphasis on freshness, Village Bali Restaurant interactive
+            all-day dining experience.
+          </p>
+          <p class="with our">
+            Our restaurant is open for breakfast, lunch and dinner.
+          </p>
+          <a href="#" class="menu">GO TO MENU</a>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <div class="wrap">
+          <div class="cebrek">
+            <h1 class="village fade-top">VILLAGE BALI</h1>
+            <p class="entire fade-in">
+              The entire team at Village Bali is available and happy to answer
+              your questions.
+            </p>
+            <table>
+              <tr>
+                <td><img src="assets/location.svg" alt="" /></td>
+                <td>
+                  Jl. Pemutih, Pecatu, Kec. Kuta Selatan, Kabupaten Badung, BALI
+                  - INDONESIA
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="assets/phone.svg" alt="" />
+                </td>
+                <td>+62 81237523203</td>
+              </tr>
+              <tr>
+                <td><img src="assets/email.svg" alt="" /></td>
+                <td>villagebali@outlook.com</td>
+              </tr>
+            </table>
+          </div>
+          <div class="maps fade-in">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2949.008300823817!2d115.1094720939122!3d-8.80895304790103!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2454530ec22c3%3A0x4a82c97547cc2959!2sVillage%20Bali!5e1!3m2!1sen!2sus!4v1724812474970!5m2!1sen!2sus"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <footer>
+      <p>&copy; dsf-dibimbing 2024</p>
+    </footer> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
